@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Uploading_Data_to_Database.jpg'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 200vh;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px; /* Move the content block down */
+        }
+
+        h1 {
+            color: #FFD700;
+        }
+
+        .fact {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #1E90FF;
+            font-weight: bold;
+        }
+
+        /* Interactive button styling */
+        .interactive-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .interactive-button:hover {
+            background-color: #0058A6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Uploading Data to Database</h1>
+            <div class="fact">
+                Did you know? Uploading data to a database is a crucial step to ensure data availability and accessibility.
+            </div>
+            <p>Explore the process of uploading data to a database and managing data integrity:</p>
+            <p><a href="https://colab.research.google.com/drive/1ZFxh7dIzDkLhh6plj59v5Ikh7h1ot-hj#scrollTo=NKznrZCJ0PKu&line=1&uniqifier=1" class="link">Learn Database Upload</a></p>
+            <button class="interactive-button" onclick="goToDataFlowDiagram()">Hit Wicket</button>
+        </div>
+    </div>
+
+    <script>
+        function goToDataFlowDiagram() {
+            window.location.href = "Data_Flow_Diagram.html"; // Redirects to Data_Flow_Diagram.html
+        }
+    </script>
+</body>
+</html>

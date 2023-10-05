@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Feedback</title>
+    <style>
+        body {
+            background-image: url('Feedback.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .feedback-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 5px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .question-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"], input[type="radio"] {
+            margin-bottom: 2px;
+        }
+
+        input[type="submit"] {
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="feedback-container">
+        <h2>Website Feedback</h2>
+        <form id="feedback-form">
+            <div class="question-row">
+                <div class="options">
+                    <span>Enter your name:</span>
+                    <input type="text" id="name" name="name" required>
+                </div>
+            </div>
+
+            <div class="question-row">
+                <div class="options">
+                    <span>How would you rate our website design?</span>
+                    <label><input type="radio" name="design" value="Good" required> Good</label>
+                    <label><input type="radio" name="design" value="Bad" required onclick="return preventNegativeFeedback()"> Bad</label>
+                </div>
+            </div>
+
+            <div class="question-row">
+                <div class="options">
+                    <span>Did you find the content helpful?</span>
+                    <label><input type="radio" name="content" value="Yes" required> Yes</label>
+                    <label><input type="radio" name="content" value="No" required onclick="return preventNegativeFeedback()"> No</label>
+                </div>
+            </div>
+
+            <div class="question-row">
+                <div class="options">
+                    <span>How likely are you to recommend our website to others?</span>
+                    <label><input type="radio" name="recommendation" value="Likely" required> Likely</label>
+                    <label><input type="radio" name="recommendation" value="Not Likely" required onclick="return preventNegativeFeedback()"> Not Likely</label>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+	 <br>
+        <button onclick="window.location.href = 'index.html';">Back to Home</button>
+    </div>
+    </div>
+
+    <script>
+        function preventNegativeFeedback() {
+            alert("Oopsie! Negative feedback? We're all ears, but we're not ready for that yet!");
+            return false;
+        }
+        
+        document.getElementById('feedback-form').addEventListener('submit', function() {
+            alert("You've brightened our day with your positive feedback! Our virtual high-five is on its way! Meanwhile, enjoy some virtual cookies!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Data_Cleaning.jpg'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+	    height: 130vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 55vh;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px; /* Move the content block down */
+        }
+
+        h1 {
+            color: #FFD700;
+        }
+
+        .fact {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #1E90FF;
+            font-weight: bold;
+        }
+
+        /* Interactive button styling */
+        .interactive-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .interactive-button:hover {
+            background-color: #0058A6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Data Cleaning</h1>
+            <div class="fact">
+                Did you know? Data cleaning is the process of identifying and correcting errors, inconsistencies, and inaccuracies in datasets.
+            </div>
+            <p>Master the art of data cleaning to ensure the accuracy and reliability of your analyses:</p>
+            <p><a href="https://colab.research.google.com/drive/1ZFxh7dIzDkLhh6plj59v5Ikh7h1ot-hj#scrollTo=0xtjIKLEmUst&line=4&uniqifier=1" class="link">Learn Data Cleaning</a></p>
+            <button class="interactive-button" onclick="goToDataFlowDiagram()">Stumped</button>
+        </div>
+    </div>
+
+    <script>
+        function goToDataFlowDiagram() {
+            window.location.href = "Data_Flow_Diagram.html"; // Redirects to Data_Flow_Diagram.html
+        }
+    </script>
+</body>
+</html>

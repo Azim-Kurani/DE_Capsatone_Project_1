@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the container */
+        .container {
+            background-image: url('Data_Flow_Diagram.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* Keeps the background fixed */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 180vh;
+            overflow: hidden; /* Prevents scrolling */
+            color: white;
+        }
+
+        .container-inner {
+            max-width: 1000px;
+            margin: 20px auto;
+	    text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .diagram {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px 0;
+        }
+
+        .node {
+            position: relative;
+            text-align: center;
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .node:hover {
+            transform: translateY(-5px);
+            background-color: #444;
+        }
+
+        .node::before {
+            content: '\f111';
+            font-family: 'Font Awesome 6 Free';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #006400;
+            border-radius: 50%;
+        }
+
+        /* Style for the node links */
+        .node a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        /* Style for the back button */
+        .back-button {
+            margin-top: 20px;
+        }
+        
+        .back-button a {
+            text-decoration: none;
+            color: white;
+            background-color: #1E90FF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button a:hover {
+            background-color: #0058A6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-inner">
+            <h1 style="margin-top: 0;">Cricket 2.0 Data Flow</h1>
+            <div class="diagram">
+                <div class="node"><a href="Website.html">Website</a></div>
+                <div class="node"><a href="Web_Scraping.html">Web Scraping</a></div>
+                <div class="node"><a href="Data_Cleaning.html">Data Cleaning <br>&<br> Creating DataFrame</a></div>
+                <div class="node"><a href="Uploading_Data_to_Database.html">Uploading Data<br>to Database</a></div>
+                <div class="node"><a href="Incremental_Update.html">Incremental Update</a></div>
+                <div class="node"><a href="visualization.html">Visualization</a></div>
+            </div>
+            <div class="back-button">
+                <a href="index.html">Go Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

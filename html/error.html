@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('error.jpg'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 220vh;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .content {
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 10px; /* Move the content block down */
+	    margin-left: 180px;
+        }
+
+        h1 {
+            color: #FFD700;
+        }
+
+        .fact {
+            font-size: 18px;
+            margin: 20px 0;
+	    color: black
+        }
+
+        .link {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Interactive button styling */
+        .interactive-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .interactive-button:hover {
+            background-color: #0058A6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Error</h1>
+            
+            <p>Error! Hope you are a cricket fan. Make sure you enter the correct website link</p>
+            <button class="interactive-button" onclick="goToDataFlowDiagram()"> Game Delayed </button>
+        </div>
+    </div>
+
+    <script>
+        function goToDataFlowDiagram() {
+            window.location.href = "Data_Flow_Diagram.html"; // Redirects to Data_Flow_Diagram.html
+        }
+    </script>
+</body>
+</html>

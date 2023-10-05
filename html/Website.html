@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-image: url('Website.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 150vh;
+            color: black; /* Change text color to black */
+            text-shadow: none; /* Remove text shadow */
+        }
+
+        .content {
+            max-width: 800px;
+            padding: 10px;
+            background-color: transparent;
+            border: 10px solid black;
+            border-radius: 30px;
+            text-align: center;
+        }
+
+        .fact {
+            font-size: 20px;
+            color: #0066CC; /* Change text color to a color more distinguishable by color-blind individuals */
+            margin: 20px 0;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #FF6347; /* Change link color to a color more distinguishable by color-blind individuals */
+            font-weight: bold;
+        }
+
+        /* Interactive button styling */
+        .interactive-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .interactive-button:hover {
+            background-color: #0058A6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Website for WebScraping</h1>
+            <p>Unveil the hidden potential of our website through cutting-edge web scraping techniques. Our platform gathers a wealth of cricket data, transforming it into actionable insights.</p>
+            <p>Embark on a journey into the realm of cricket analytics: <a href="https://cricsheet.org/matches/" class="link">Explore the Cricket Universe</a></p>
+            <div class="fact">
+                Did you know? Cricket is one of the oldest sports, with origins dating back to the 16th century.
+            </div>
+	    <button class="interactive-button" onclick="goToDataFlowDiagram()">Bowled</button>
+        </div>
+    </div>
+
+    <script>
+        function goToDataFlowDiagram() {
+            window.location.href = "Data_Flow_Diagram.html"; // Redirects to Data_Flow_Diagram.html
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
